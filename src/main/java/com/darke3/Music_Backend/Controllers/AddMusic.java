@@ -10,7 +10,9 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/api/MusicCard")
-@CrossOrigin(origins = "http://localhost:5173")
+@CrossOrigin(origins = {
+        "http://localhost:5173",
+        "https://aniketsmusic.netlify.app"})
 public class AddMusic {
     @Autowired
     private MusicRepo musicRepo;
